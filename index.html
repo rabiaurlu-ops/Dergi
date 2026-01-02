@@ -2,28 +2,18 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dijital Dergi</title>
     <link href="https://cdn.jsdelivr.net/npm/dflip-lite@1.0.0/css/dflip.min.css" rel="stylesheet" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/dflip-lite@1.0.0/css/themify-icons.min.css" rel="stylesheet" type="text/css">
-    <style>
-        body, html { margin: 0; padding: 0; height: 100%; background-color: #1a1a1a; overflow: hidden; }
-        #dergi-container { height: 100vh; width: 100%; }
-    </style>
 </head>
-<body>
+<body style="margin:0; background:#1a1a1a;">
 
-    <div id="dergi-container">
-        <div class="_df_book" height="100%" width="100%" 
-             webgl="true" 
-             source="dergi.pdf" 
-             id="df_book_instance"
-             data-options='{"mode":"full","viewMode":"webgl","layout":2,"enableDownload":true}'>
-        </div>
+    <div class="_df_book" height="100vh" width="100%" 
+         source="https://rabiaurlu-ops.github.io/Dergi/dergi.pdf" 
+         id="df_book_instance">
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dflip-lite@1.0.0/js/dflip.min.js"></script>
-
 </body>
 </html>
