@@ -4,36 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D Dijital Dergi</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/dflip-lite@1.0.0/css/dflip.min.css" rel="stylesheet" type="text/css">
-    <link href="https://cdn.jsdelivr.net/npm/dflip-lite@1.0.0/css/themify-icons.min.css" rel="stylesheet" type="text/css">
-    
+    <link href="https://cdn.jsdelivr.net/npm/@dearhive/dearflip-jquery-flipbook@1.7.3/dflip/css/dflip.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@dearhive/dearflip-jquery-flipbook@1.7.3/dflip/css/themify-icons.min.css" rel="stylesheet">
     <style>
         body, html { margin: 0; padding: 0; height: 100%; background-color: #1a1a1a; overflow: hidden; }
-        #flipbook-container { height: 100vh; width: 100%; }
+        #flipbook-area { height: 100vh; width: 100%; }
     </style>
 </head>
 <body>
 
-    <div id="flipbook-container">
-        <div class="_df_book" 
-             height="100%" 
-             width="100%" 
-             source="./dergi.pdf" 
-             id="df_book_instance"
-             data-options='{
-                "layout": 2, 
-                "viewMode": "webgl", 
-                "forceFit": true,
-                "hard": "cover",
-                "direction": 1,
-                "backgroundColor": "#1a1a1a"
-             }'>
+    <div id="flipbook-area">
+        <div class="_df_book" height="100%" width="100%" 
+             source="dergi.pdf" 
+             id="dergi_flipbook"
+             data-options='{"layout":2, "viewMode":"webgl", "hard":"cover"}'>
         </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dflip-lite@1.0.0/js/dflip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@dearhive/dearflip-jquery-flipbook@1.7.3/dflip/js/dflip.min.js"></script>
 
 </body>
 </html>
